@@ -1,20 +1,21 @@
-body{
-	font: 12px,Arial;
-	color: #727272;
+body
+{
+	font-size: 12px;
+	font-family: 'Arial';
+	color:#c0c0c0;
 	line-height: 2em;
+	a{
+		color:#727272;
+
+	}
+	.c{
+		font-size: 14px;
+		color: #b9f605;
+		font-weight: bolder;
+	}
+	.x{
+		color: #ffffff
+	}
+
 }
-a{
-	color: #727272;
-	text-decoration: none;
-}
-.menu{
-	font-weight: bolder;
-	font-size: 14px;
-	color: #b9f605 ;
-}
-.menu a{
-	color: #FFFFFF;
-}
-.menu .special{
-	color:#fdb306;
-}	
+
