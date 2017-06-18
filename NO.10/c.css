@@ -1,0 +1,52 @@
+#header{
+	height: 205px;
+	background-image: url(resource/images/bg.gif);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#banner{
+	width: 1000px;
+	height: 164px;
+	text-align: center;
+	position: relative;
+	top: 38px;
+	left: 25px;
+}
+#nav{
+	height: 40px;
+	background-image: url(resource/images/nav.jpg);
+}
+.nav_body{
+	width: 1000px;
+	text-align: center;
+}
+.nav_body ul{
+	width: 800px;
+	font-weight: bolder;
+	color: #fff;
+	overflow: hidden;
+}
+.nav_body ul li{
+	float: left;
+	margin: 7px 10px;
+}
+.nav_body ul li a{
+	line-height: 40px;
+	color: #f9f603;
+}
+a:hover{color: #f9f603;text-decoration:none;}
+.nav_search input{
+	width: 140px;
+	height: 19px;
+	background-color: #f8f5ee;
+	float: left;
+
+}
+.nav_button input{
+	width: 44px;
+	height: 21px;
+	background-color:#000;
+	color: #fff;
+	border: 1px soild #f8f5ee;  
+float: left;
+}
