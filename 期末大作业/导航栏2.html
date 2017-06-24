@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+	body{
+		padding: 0;
+		font-size: 10pt;
+	}
+	.topmenu{
+		float:left;
+		display: block;
+		width: 220px;
+		border: 2px solid #e4393c;
+		margin: 0;
+		padding: 0;
+
+	}
+	.topmenu1{
+		display: block;
+		width: 220px;
+		border: 2px solid #e4393c;
+		margin: 0;
+		padding: 0;
+		float: right;
+	}
+	.toptitle{
+		height: 40px;
+		line-height: 40px;
+		text-align: left;
+		font-size: 11pt;
+		font-weight: bold;
+		color: white;
+		background: #e4393c;
+		padding-left: 20px;
+	}
+	.toptitle1{
+		height: 40px;
+		line-height: 40px;
+		text-align: left;
+		font-size: 11pt;
+		font-weight: bold;
+		color: white;
+		background: #e4393c;
+		padding-left: 140px;
+
+	}
+	.topmenu li{
+		height: 30px;
+		line-height: 30px;
+		font-size: 11pt;
+		list-style-type:none;
+		text-align: left;
+		padding-left: 8px;
+		z-index: 3;
+		background-image: url(images/箭头.JPG);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	.topmenu1 li{
+		height: 30px;
+		line-height: 30px;
+		font-size: 11pt;
+		list-style-type:none;
+		text-align: left;
+		padding-left: 8px;
+		z-index: 3;
+		background-image: url(images/箭头2.JPG);
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+	.topmenu li a{
+		text-decoration: none;
+		color: #313131;
+	}
+	.topmenu1 li a{
+		text-decoration: none;
+		color: #313131;
+	}
+
+    .topmenu li a
+        {
+            text-decoration: none;
+            color: #313131;
+        }
+    .topmenu li a:hover
+        {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #e4393c;
+        }
+    .topmenu .lihover{
+    	border: 1px solid #DDD;
+    	border-right: 0;
+    	box-shadow: 0 0 8px #DDD;
+    	background-image: none;
+    }
+    .topmenu1 li a
+        {
+            text-decoration: none;
+            color: #313131;
+        }
+    .topmenu1 li a:hover
+        {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #e4393c;
+        }
+    .topmenu1 .lihover{
+    	border: 1px solid #DDD;
+    	border-right: 0;
+    	box-shadow: 0 0 8px #DDD;
+    	background-image: none;
+    }
+    .submenu{
+    	display: none;
+    	width: 715px;
+    	left: 220px;
+    	position: absolute;
+    	top: 40px;
+    	border: 1px solid #DDD;
+    	z-index: 4;
+    	background: white;
+    	box-shadow: 0 0 8px #DDD;
+    }
+    .submenu1{
+    	
+    	display: none;
+    	width: 715px;
+    	right: 220px;
+    	position: absolute;
+    	top: 40px;
+    	border: 1px solid #DDD;
+    	z-index: 4;
+    	background: white;
+    	box-shadow: 0 0 8px #DDD;
+    	height: 110px;
+    }
+    .leftdiv{
+    	
+    	float: left;
+    	width: 490px;
+    	margin: 5px;
+    }
+    .leftdiv1{
+    	position: absolute;
+    	left: 220px;
+    	/*float: right;*/
+    	width: 490px;
+    	margin: 5px;
+    }
+    .rightdiv{
+    	background: blue;
+    	float: left;
+    	width: 200px;
+    	margin: 5px;
+    }
+    .topmenu .lihover .submenu{
+    	display:block;
+    }
+    .topmenu .lihover .submenu1{
+    	display:block;
+    }
+    .topmenu .lihover  span{
+    	background: white;
+    	display: inline-block;
+    	z-index: 20;
+    	width: 20px;
+    	height: 30px;
+    	float: right;
+    	position: relative;
+    }
+     .topmenu1 .lihover .submenu{
+    	display:block;
+    }
+    .topmenu1 .lihover .submenu1{
+    	display:block;
+    }
+    .topmenu1 .lihover  span{
+    	background: white;
+    	display: inline-block;
+    	z-index: 20;
+    	width: 20px;
+    	height: 30px;
+    	float: right;
+    	position: relative;
+    }
+    .leftdiv dl{
+    	display: block;
+    	border-bottom: 1px solid #EEE; 
+    	padding-bottom: 6px;
+    	overflow: hidden;
+    }
+    .leftdiv dl dt{
+    	display: block;
+    	float: left;
+    	width: 60px;
+    	text-align: right;
+    	height: 22px;
+    	line-height: 22px;
+    	padding-right: 6px;
+    }
+    .leftdiv dl dt a{
+    	color:  #e4393c;
+    	font-weight:bold;
+    	text-decoration: underline;
+    	font-size: 10pt;
+    }
+    .leftdiv dl dd{
+    	display: block;
+    	overflow: hidden;
+
+    }
+    .leftdiv dl dd a{
+    	display: block;
+    	border-left: 1px solid #CCC;
+    	color: #737373;
+    	float: left;
+    	font-size: 9pt;
+    	padding: 0 8px;
+    	height: 14px;
+    	line-height: 14px;
+    	margin: 4px 0;
+    }
+     .leftdiv1 dl{
+    	display: block;
+    	border-bottom: 1px solid #EEE; 
+    	padding-bottom: 6px;
+    	overflow: hidden;
+    	float: right;
+    }
+    .leftdiv1 dl dt{
+    	display: block;
+    	float: right;
+    	width: 60px;
+    	text-align: right;
+    	height: 22px;
+    	line-height: 22px;
+    	padding-right: 6px;
+    	float: right;
+    	
+    }
+    .leftdiv1 dl dt a{
+    	color:  #e4393c;
+    	font-weight:bold;
+    	text-decoration: underline;
+    	font-size: 10pt;
+    	float: right;
+    	    }
+    .leftdiv1 dl dd{
+    	display: block;
+    	overflow: hidden;
+
+    }
+    .leftdiv1 dl dd a{
+    	display: block;
+    	border-left: 1px solid #CCC;
+    	color: #737373;
+    	float: left;
+    	font-size: 9pt;
+    	padding: 0 8px;
+    	height: 14px;
+    	line-height: 14px;
+    	margin: 4px 0;
+
+    }
+    .topmenu1 li a{
+    	float: right;
+    }
+    #SlideBar:after{
+    	content: "";
+    	display: block;
+    	clear: both;
+    }
+    img{
+	width:200px;
+	height:200px;
+	margin-left:5px;
+}
+#picScroll{
+
+	margin:0 auto;
+	height:200px;
+	border:1px solid #C90;
+	white-space:nowrap; //不换行
+	width:600px;
+	overflow:hidden;
+}
+#wy1{
+margin-top: 10px;
+}
+#wy2:after{
+	float: right;
+	content: "";
+    	display: block;
+    	clear: both;
+}
+.zy img{
+	width: 800px;
+	height: 494px;
+	position: absolute;
+	left: 270px;
+	top: 177px;
+}
+</style>
+<style type="text/css">
+#nav2{
+	background-color:#313131;
+	height: 30px; 
+}
+#nav2 ul li{
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	width: 8.8%;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+	list-style-type:none;
+	color: black;
+}
+#nav2 ul li a{
+	
+	color: white;
+	text-decoration: none;
+}
+#nav2 ul li:hover{
+		color: white;
+		background: blue;
+	}
+#zuihou{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	float: right;
+}
+#zuihou p{
+	color: white;
+	line-height: 100px;
+
+}
+#wpj{
+	position: absolute;
+	color: white;
+	background-color: black;
+	width: 100px;
+	height: 50px;
+}
+</style>
+<style type="text/css">
+	#bh{
+		width:100%;height:120px;margin-bottom:10px;
+	}
+</style>
+
+
+
+</head>
+<body>
+	<div style="width:100%;height:120px;margin-bottom:10px;">
+		<img src="images/背景.JPG" id="bh">
+	</div>
+	<div id="nav2">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">焦点</a></li>
+				<li><a href="#">赛程</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">社区</a></li>
+				<li><a href="#">排名</a></li>
+				<li><a href="#">统计</a></li>
+				<li><a href="#">装备</a></li>
+				<li><a href="#">图片</a></li>
+				<li><a href="#">加入我们</a></li>
+				<li><a href="#">不是会员/注册</a></li>	
+			</ul>
+		</div>
+	<div id="SlideBar">
+		<div><ul class="topmenu" id="test">
+			<div class="toptitle">
+				西部球队
+			</div>
+			<li><a href="#">湖人</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">兰德尔</a>
+							<a href="#">杨</a>
+							<a href="#">克拉克森</a>
+							<a href="#">布莱克</a>
+							<a href="#">慈世平</a>
+							<a href="#">英格拉姆</a>
+							<a href="#">拉塞尔</a>
+							<a href="#">莫斯哥夫</a>
+							<a href="#">邓</a>
+							<a href="#">威廉姆斯</a>
+							<a href="#">卡尔德隆</a>
+							<a href="#">罗宾逊</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">鹈鹕</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">戴维斯</a>
+							<a href="#">希尔德</a>
+							<a href="#">伽罗卫</a>
+							<a href="#">弗雷泽</a>
+							<a href="#">埃文斯</a>
+							<a href="#">霍乐迪</a>
+							<a href="#">庞德赛特</a>
+							<a href="#">摩尔</a>
+							<a href="#">琼斯</a>
+							<a href="#">丹特</a>
+							<a href="#">阿西克</a>
+							<a href="#">罗宾逊</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">火箭</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">快船</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">小牛</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">马刺</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">开拓者</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">森林狼</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">灰熊</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">掘金</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">钱德勒</a>
+							<a href="#">努尔基奇</a>
+							<a href="#">米勒</a>
+							<a href="#">加里纳利</a>
+							<a href="#">穆迪埃</a>
+							<a href="#">基</a>
+							<a href="#">亚瑟</a>
+							<a href="#">尼尔森</a>
+							<a href="#">巴顿</a>
+							<a href="#">法里德</a>
+							<a href="#">穆雷</a>
+							<a href="#">哈里斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">太阳</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">莱恩</a>
+							<a href="#">杜德利</a>
+							<a href="#">塔克</a>
+							<a href="#">沃伦</a>
+							<a href="#">布克</a>
+							<a href="#">钱德勒</a>
+							<a href="#">巴博赛</a>
+							<a href="#">詹金斯</a>
+							<a href="#">威廉姆斯</a>
+							<a href="#">本德尔</a>
+							<a href="#">奈特</a>
+							<a href="#">布莱德索</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">爵士</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">戈伯特</a>
+							<a href="#">维西</a>
+							<a href="#">内托</a>
+							<a href="#">艾克萨姆</a>
+							<a href="#">胡德</a>
+							<a href="#">里雷斯</a>
+							<a href="#">希尔</a>
+							<a href="#">英格尔斯</a>
+							<a href="#">海沃德</a>
+							<a href="#">费沃斯</a>
+							<a href="#">迪奥</a>
+							<a href="#">博克斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">国王</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">麦科勒姆</a>
+							<a href="#">盖伊</a>
+							<a href="#">阿弗拉罗</a>
+							<a href="#">特立沃</a>
+							<a href="#">库弗斯</a>
+							<a href="#">劳森</a>
+							<a href="#">卡斯比</a>
+							<a href="#">科里森</a>
+							<a href="#">巴恩斯</a>
+							<a href="#">贝弗利</a>
+							<a href="#">考辛斯</a>
+							<a href="#">坦普利</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">勇士</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">库里</a>
+							<a href="#">杜兰特</a>
+							<a href="#">麦基</a>
+							<a href="#">韦斯特</a>
+							<a href="#">鲁尼</a>
+							<a href="#">利文斯顿</a>
+							<a href="#">伊戈达拉</a>
+							<a href="#">格林</a>
+							<a href="#">汤普森</a>
+							<a href="#">瓦莱乔</a>
+							<a href="#">帕楚里亚</a>
+							<a href="#">琼斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">雷霆</a><span></span>
+				<div class="submenu">
+					<div class="leftdiv">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">维斯布鲁克</a>
+							<a href="#">奥拉迪波</a>
+							<a href="#">亚当斯</a>
+							<a href="#">罗伯森</a>
+							<a href="#">格兰特</a>
+							<a href="#">莫罗</a>
+							<a href="#">辛格乐</a>
+							<a href="#">坎特</a>
+							<a href="#">科里森</a>
+							<a href="#">佩恩</a>
+							<a href="#">胡斯蒂斯</a>
+							<a href="#">萨博尼斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+		</ul></div> 
+		
+		<div><ul class="topmenu1">
+			<div class="toptitle1">
+				东部球队
+			</div>
+			<li><a href="#">热火</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">兰德尔</a>
+							<a href="#">杨</a>
+							<a href="#">克拉克森</a>
+							<a href="#">布莱克</a>
+							<a href="#">慈世平</a>
+							<a href="#">英格拉姆</a>
+							<a href="#">拉塞尔</a>
+							<a href="#">莫斯哥夫</a>
+							<a href="#">邓</a>
+							<a href="#">威廉姆斯</a>
+							<a href="#">卡尔德隆</a>
+							<a href="#">罗宾逊</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">公牛</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">戴维斯</a>
+							<a href="#">希尔德</a>
+							<a href="#">伽罗卫</a>
+							<a href="#">弗雷泽</a>
+							<a href="#">埃文斯</a>
+							<a href="#">霍乐迪</a>
+							<a href="#">庞德赛特</a>
+							<a href="#">摩尔</a>
+							<a href="#">琼斯</a>
+							<a href="#">丹特</a>
+							<a href="#">阿西克</a>
+							<a href="#">罗宾逊</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">凯尔特人</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">步行者</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">骑士</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">猛龙</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">黄蜂</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">活塞</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">老鹰</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">哈登</a>
+							<a href="#">布鲁尔</a>
+							<a href="#">恩尼斯</a>
+							<a href="#">卡佩拉</a>
+							<a href="#">内内</a>
+							<a href="#">戈登</a>
+							<a href="#">安德森</a>
+							<a href="#">哈雷尔</a>
+							<a href="#">阿里扎</a>
+							<a href="#">贝弗利</a>
+							<a href="#">麦克丹尼尔斯</a>
+							<a href="#">德克尔</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">魔术</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">钱德勒</a>
+							<a href="#">努尔基奇</a>
+							<a href="#">米勒</a>
+							<a href="#">加里纳利</a>
+							<a href="#">穆迪埃</a>
+							<a href="#">基</a>
+							<a href="#">亚瑟</a>
+							<a href="#">尼尔森</a>
+							<a href="#">巴顿</a>
+							<a href="#">法里德</a>
+							<a href="#">穆雷</a>
+							<a href="#">哈里斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">奇才</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">莱恩</a>
+							<a href="#">杜德利</a>
+							<a href="#">塔克</a>
+							<a href="#">沃伦</a>
+							<a href="#">布克</a>
+							<a href="#">钱德勒</a>
+							<a href="#">巴博赛</a>
+							<a href="#">詹金斯</a>
+							<a href="#">威廉姆斯</a>
+							<a href="#">本德尔</a>
+							<a href="#">奈特</a>
+							<a href="#">布莱德索</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">篮网</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">戈伯特</a>
+							<a href="#">维西</a>
+							<a href="#">内托</a>
+							<a href="#">艾克萨姆</a>
+							<a href="#">胡德</a>
+							<a href="#">里雷斯</a>
+							<a href="#">希尔</a>
+							<a href="#">英格尔斯</a>
+							<a href="#">海沃德</a>
+							<a href="#">费沃斯</a>
+							<a href="#">迪奥</a>
+							<a href="#">博克斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">76人</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">麦科勒姆</a>
+							<a href="#">盖伊</a>
+							<a href="#">阿弗拉罗</a>
+							<a href="#">特立沃</a>
+							<a href="#">库弗斯</a>
+							<a href="#">劳森</a>
+							<a href="#">卡斯比</a>
+							<a href="#">科里森</a>
+							<a href="#">巴恩斯</a>
+							<a href="#">贝弗利</a>
+							<a href="#">考辛斯</a>
+							<a href="#">坦普利</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">雄鹿</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">库里</a>
+							<a href="#">杜兰特</a>
+							<a href="#">麦基</a>
+							<a href="#">韦斯特</a>
+							<a href="#">鲁尼</a>
+							<a href="#">利文斯顿</a>
+							<a href="#">伊戈达拉</a>
+							<a href="#">格林</a>
+							<a href="#">汤普森</a>
+							<a href="#">瓦莱乔</a>
+							<a href="#">帕楚里亚</a>
+							<a href="#">琼斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">尼克斯</a><span></span>
+				<div class="submenu1">
+					<div class="leftdiv1">
+					<dl>
+						<dt><a href="#">阵容</a></dt>
+						<dd>
+							<a href="#">维斯布鲁克</a>
+							<a href="#">奥拉迪波</a>
+							<a href="#">亚当斯</a>
+							<a href="#">罗伯森</a>
+							<a href="#">格兰特</a>
+							<a href="#">莫罗</a>
+							<a href="#">辛格乐</a>
+							<a href="#">坎特</a>
+							<a href="#">科里森</a>
+							<a href="#">佩恩</a>
+							<a href="#">胡斯蒂斯</a>
+							<a href="#">萨博尼斯</a>
+						</dd>
+					</dl>
+					</div>
+				</div>
+			</li>
+		</ul></div>
+	</div>
+	<div id="wy1">
+		<div id="picScroll">
+			<span id="picScroll1" class="picScroll12">
+				<img src="images/a1.jpg" />
+				<img src="images/a2.jpg" />
+				<img src="images/a3.jpg" />
+				<img src="images/a4.jpg" />
+				<img src="images/a5.jpg" />
+				<img src="images/a6.jpg" />
+				<img src="images/a7.jpg" />
+				<img src="images/a8.jpg" />
+			</span>
+			<span id="picScroll2"></span>
+ 		</div> 
+	</div>
+	<div class="zy">
+		<img src="images/zy.JPG" id="djy">	
+	</div>
+	<div id="zuihou">
+			<p>=-=-=-=--------------------------------------------------技术统计-----NBA赛事-----NBA规则-----NBA资料-----NBA记录-----手机看比赛-----2017全明星-------------------------------------------------=-=-=-=</p>
+	</div>
+
+			
+</body>
+</html>

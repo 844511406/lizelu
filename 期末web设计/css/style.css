@@ -1,0 +1,163 @@
+*{margin: 0px;
+	padding: 0px;
+
+	}
+body{
+	width: 90%;
+		margin: 0px auto;
+}
+ul li{list-style-type: none;}
+a{
+	text-decoration: none;
+	color: black;
+}
+#nav1{
+	background-color:#FFFFCC;
+	height: 80px;
+}
+#nav1 img{
+	position: relative;
+	left: 200px;
+}
+#nav2{
+	background-color:#33CCCC;
+	height: 30px; 
+}
+#nav2 ul li{
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	width: 9.09%;
+	font-family: arial,tahoma,'Microsoft Yahei','\5b8b\4f53',sans-serif;
+
+}
+#nav2 ul li:hover{
+		color: green;
+		background: #FF99CC;
+	}
+/*内容*/
+#nav3{
+	margin-top: 10px;
+	width: 100%;
+}
+#zuo1{
+	width: 70%;
+	height: 180px;
+	float: left;
+
+}
+#tu1{
+	width: 30%;
+	float: left;
+}
+#tu1 img{
+	width: 100%;
+	
+}
+#xinwen{
+	width: 65%;
+	float: left;
+	margin-left: 10px;
+}
+#liebiao span{
+	float: right;
+}
+#lianjie{
+	padding-top: 20px;
+}
+#lianjie ul li a:hover{
+	color: green;
+}
+#lianjie ul li span{
+	float: right;
+}
+#lianjie ul li{
+	line-height: 28px;
+}
+#xinwen ul li a:link{
+	color: black;
+}
+#zuo2{
+	width: 100%;
+	height: 20px;
+	background-color: #99FFFF;
+	text-align: center;
+}
+#you2{
+	width: 20%;
+	float: left;
+	margin-left: 120px;
+}
+#you2 img{
+	width: 100%;
+}
+#heng{
+	background-image: url(素材/5.jpg);
+	height: 30px;
+	width: 100%;
+
+}
+#nav4{
+	width: 100%;
+	margin-top: 20px;
+}
+#fenge{
+	width: 100%;
+	height: 20px;
+	background-color:red;
+	text-align: center;
+	float:right;
+	margin-top: 20px;
+}
+#nav5{
+
+	width: 100%;
+	float: right;
+	margin-top: 20px;
+}
+#nav5 a img{
+	width: 17%;
+	margin-right: 14px;
+	margin-left: 15px;
+}
+#da{
+	width: 100%;
+	height: 100px;
+}
+#xuan{
+	width: 50%;
+	background-color: pink;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+}
+#xuan1{
+	width: 50%;
+	background-color: green;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+}
+#tu{
+	margin-left: 400px;
+}
+#zuihou{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	float: right;
+}
+#zuihou p{
+	color: white;
+	line-height: 100px;
+
+}
+#nav1 form{
+	float: right;
+	line-height: 80px;
+}
+#fanye form {
+	margin-left: 530px;
+}
